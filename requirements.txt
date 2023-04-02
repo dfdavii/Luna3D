@@ -1,0 +1,34 @@
+# On Ubuntu, install the following packages:
+# cd my-project
+# virtualenv --python python3 venv
+#
+# And activate the virtual environment by running:
+#
+# source venv/bin/activate
+# 
+# create requirements file;
+# pip freeze > requirements.txt
+# 
+# This file can then be used by collaborators to update virtual environments using the following command:
+# # pip install -r requirements.txt
+# Deactivate
+# # # deactivate
+# https://research.google.com/colaboratory/local-runtimes.html
+
+blosc>=1.8.1,<2
+diskcache==4.1.0
+h5py
+jupyter
+matplotlib
+numpy
+Pillow
+scikit-image
+scipy
+SimpleITK
+tensorflow
+
+# The book was written targeting PyTorch 1.4, but everything in it should work fine with more up-to-date versions.
+torch
+
+# future is here due to a missing dep in caffe2
+# future
